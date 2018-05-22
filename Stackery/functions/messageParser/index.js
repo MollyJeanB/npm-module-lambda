@@ -7,6 +7,6 @@ module.exports = async message => {
   console.dir(message)
 
   return {
-    "response": emoji.emojify(md.render(inputString))
+    "response": emoji.emojify(md.render(message.text))
   }
 }
